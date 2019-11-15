@@ -38,6 +38,7 @@ void slove(int n, char A, char B, char C){
 	step++;
 }
 
+
 /**
 n为奇数次，先从A->C;
 n为偶数次，先从A->B;
