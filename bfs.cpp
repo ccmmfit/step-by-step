@@ -13,10 +13,10 @@ void bfs(int v){
 		cout << u << "  "; 
 		q.pop(); //出队列
 		for(int j = 0; j < E[u].size(); ++j){ //遍历u的邻接边
-			int near_u = E[u][j];
-			if(!vis[near_u]){ //如果未访问过
-				vis[near_u] = 1; //访问顶点near_u并标记
-				q.push(near_u);  //入队列
+			int nearu = E[u][j];
+			if(!vis[nearu]){ //如果未访问过
+				vis[nearu] = 1; //访问顶点near_u并标记
+				q.push(nearu);  //入队列
 			}
 		}
 	}
