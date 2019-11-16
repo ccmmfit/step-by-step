@@ -7,6 +7,10 @@ int line[maxn][maxn]; //邻接矩阵
 int vis[maxn], nxt[maxn];   //标记visited, nxt存放第一列(发起匹配)
 int n, m, p;
 
+/**
+在一个n*n的矩阵中，找n个数使得这n个数都在不同的行和列里并且要求这n个数中的最大值和最小值的差值最小。
+**/
+
 bool find(int x, int mid){
 	
 	for(int j = 1; j <= m; ++j){ //扫描第二列(等待匹配)
