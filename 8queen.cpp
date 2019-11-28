@@ -19,16 +19,12 @@ bool check(int x){
 
 void print(){
 	for (int i = 1; i <= n; ++i){
-			for(int j = 1; j <= m; ++j){
-				if(j != nxt[i]){
-					cout << "0";
-				}else{
-					cout << "1";
-				}	
-			}
-			cout << endl;
+		for(int j = 1; j <= m; ++j){
+		 	cout << j != nxt[i] ? "0" : "1";	
 		}
 		cout << endl;
+	}
+	cout << endl;
 }
 
 void dfs(int x, int n){
@@ -53,11 +49,11 @@ int main(){
 	int t;
 	while(cin >> n){
 		
-			m = n;
-			memset(nxt, 0, sizeof(nxt));
-			cnt = 0;
-			dfs(1, n);
-			cout << cnt << endl;
+		m = n;
+		memset(nxt, 0, sizeof(nxt));
+		cnt = 0;
+		dfs(1, n);
+		cout << cnt << endl;
 		
 	}
 	
