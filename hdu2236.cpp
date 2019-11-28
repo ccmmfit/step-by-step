@@ -53,13 +53,11 @@ int slove(int minv, int maxv){
 		int mid = left + (right - left)/2;
 
 		bool ismatch = match(mid);
-		   for(p = minv; p + mid <= maxv; p++)
-            {
-                if(match(mid))
-                {
-                    ismatch=true;
-                    break;
-                }
+		for(p = minv; p + mid <= maxv; p++){
+                	if(match(mid)){
+                    		ismatch=true;
+                    		break;
+                	}
             }
 
 		//cout << "mid:" << mid << " ismatch:" << ismatch << endl;
