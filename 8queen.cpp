@@ -1,11 +1,8 @@
 #include<bits/stdc++.h>
 using namespace std;
-#define INF 100000000
-const int maxn = 123;
-int cnt;
 
 int nxt[maxn];   //nxt存放第一列(发起匹配)
-int n, m;
+int cnt, n, m;
 
 
 bool check(int x){
