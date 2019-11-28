@@ -24,7 +24,7 @@ void print(){
 	cout << endl;
 }
 
-void dfs(int x, int n){
+void dfs(int x){
 
 	if(x > n && n > 0)  { //当行号超过n时，说明满足了条件，总情况数+		
 		cnt++;
@@ -35,7 +35,7 @@ void dfs(int x, int n){
 		//cout << nxt[x] << " -- " << j << endl;
 		nxt[x] = j;
 		if(check(x)){		
-			dfs(x+1, n);
+			dfs(x+1);
 		}
 	}
 }
@@ -49,7 +49,7 @@ int main(){
 		m = n;
 		memset(nxt, 0, sizeof(nxt));
 		cnt = 0;
-		dfs(1, n);
+		dfs(1);
 		cout << cnt << endl;
 		
 	}
